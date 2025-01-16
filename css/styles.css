@@ -72,6 +72,12 @@ button {
   padding-bottom: 32px;
 }
 
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-logo {
   font-weight: 700;
   font-size: 18px;
@@ -82,6 +88,12 @@ button {
 
 .header-logo-italic {
   font-style: italic;
+}
+
+.header-menu-list {
+  display: flex;
+  /* margin-left: auto; */
+  gap: 24px;
 }
 
 .header-menu-link {
@@ -102,6 +114,7 @@ button {
 .hero {
   background-color: #1e1823;
   margin-bottom: 72px;
+  border-radius: 30px;
 }
 .hero-wrapper {
   padding: 380px 40px 40px 40px;
@@ -114,6 +127,11 @@ button {
   letter-spacing: -0.03em;
   color: #ffffff;
   margin-bottom: 32px;
+  max-width: 484px;
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
 }
 
 .hero-btn {
@@ -122,6 +140,11 @@ button {
   line-height: 1.21;
   color: #ffffff;
   cursor: pointer;
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: #fd9222;
+  margin-right: 14px;
 }
 
 .hero-btn-link {
@@ -129,14 +152,19 @@ button {
   font-weight: 600;
   line-height: 1.21;
   color: #ffffff;
+  padding: 14px 40px;
+  border-radius: 100px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
 }
 
 .hero-btn-scroll {
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.29;
+  line-height: calc(18 / 14);
   letter-spacing: -0.03em;
   color: #ffffff;
+  margin-left: auto;
 }
 
 /*-------------- FEATURES------------- */
@@ -148,11 +176,14 @@ button {
 }
 
 .features-list {
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 36px;
+  padding-right: 36px;
+  display: flex;
+  gap: 70px;
 }
 
 .features-item {
+  width: calc((100% - 140px) / 3);
 }
 
 .features-subtitle {
@@ -174,6 +205,7 @@ button {
 
 .taste {
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .taste-title {
@@ -193,9 +225,18 @@ button {
 }
 
 .taste-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* row-gap: 40px;
+  column-gap: 19px; */
+  gap: 40px 19px;
 }
 
 .taste-item {
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  padding: 28px 32px;
+  width: calc((100% - 19px * 3) / 4);
 }
 
 .taste-image {
