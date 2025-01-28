@@ -430,7 +430,80 @@
           >
         </li>
       </ul>
-      <!-- ul>li*3>a -->
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button
+          type="button"
+          class="modal-close"
+        >
+          X
+        </button>
+        <p class="section-title modal-title">
+          LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label
+              for="user-name"
+              class="modal-label"
+              >Name</label
+            >
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                placeholder="Enter your name"
+                required
+                minlength="2"
+                id="user-name"
+              />
+              <svg
+                class="modal-input-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label>
+              <span>Email</span>
+              <input
+                type="email"
+                class="modal-input"
+                name="user-email"
+                placeholder=""
+              />
+            </label>
+          </div>
+          <div class="modal-field">
+            <input
+              type="tel"
+              class="modal-input"
+              name="user-tel"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="modal-field">
+            <label
+              for="user-comment"
+              class="modal-label"
+              >Comment</label
+            >
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

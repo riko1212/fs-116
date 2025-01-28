@@ -508,3 +508,112 @@ button {
   line-height: 1.14;
   letter-spacing: -0.02em;
 }
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(30, 24, 35, 0.582);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.modal {
+  width: 517px;
+  min-height: 794px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+
+.modal-close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 26px;
+  right: 26px;
+}
+.modal-title {
+  text-align: left;
+  max-width: 300px;
+  margin-bottom: 40px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.modal-field {
+  margin-bottom: 18px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 68px;
+  border: 1px solid rgba(17, 17, 17, 0.25);
+  background-color: transparent;
+  border-radius: 13px;
+  padding-left: 62px;
+  padding-right: 24px;
+  font-size: 16px;
+  color: aquamarine;
+  outline: transparent;
+}
+
+.modal-input:focus {
+  border-color: #fd9222;
+}
+
+.modal-input:focus + .modal-input-icon {
+  stroke: #fd9222;
+}
+
+.modal-input-icon {
+  fill: transparent;
+  stroke: #111111;
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-input::placeholder {
+  font-size: 12px;
+  color: tomato;
+}
+
+/* .modal-input:valid {
+  background-color: rgba(0, 255, 55, 0.47);
+}
+
+.modal-input:invalid {
+  background-color: rgba(255, 68, 0, 0.47);
+} */
+
+.modal-label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: rgba(64, 64, 64, 0.3);
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 137px;
+  border: 1px solid rgba(17, 17, 17, 0.25);
+  background-color: transparent;
+  border-radius: 13px;
+  padding: 24px;
+  font-size: 16px;
+  color: aquamarine;
+  outline: transparent;
+  resize: none;
+}
