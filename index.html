@@ -37,7 +37,7 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a
@@ -95,10 +95,77 @@
             ></a>
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-open"
+        >
+          O
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <div>
+          <button
+            type="button"
+            class="menu-close"
+          >
+            X
+          </button>
+          <nav>
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a
+                  class="mob-menu-link"
+                  href=""
+                  >Home</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a
+                  class="mob-menu-link"
+                  href="#made"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a
+                  class="mob-menu-link"
+                  href="#loved"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="mob-soc-list">
+          <li class="mob-soc-item">
+            <a
+              href=""
+              class="mob-soc-link"
+              ><svg
+                class="mob-soc-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              href=""
+              class="mob-soc-link"
+              ><svg
+                class="mob-soc-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-twitter"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <div class="hero-wrapper">
             <h1 class="hero-title">
@@ -125,7 +192,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section
         id="features"
         class="features"
@@ -189,6 +256,10 @@
             <li class="taste-item">
               <div class="taste-cover-wrap">
                 <img
+                  srcset="
+                    ./images/taste-img-1.png    1x,
+                    ./images/taste-img-1-2x.png 2x
+                  "
                   class="taste-image"
                   src="./images/taste-img-1.png"
                   width="206"
@@ -286,13 +357,32 @@
         <div class="container">
           <h2 class="made-title section-title">hOW IT’S <span>made?</span></h2>
           <div class="made-content">
-            <img
-              src="./images/made-img.jpg"
-              alt="liquid chocolate"
-              width="600"
-              height="400"
-              class="made-image"
-            />
+            <picture>
+              <source
+                media="(min-width: 1166px)"
+                srcset="./images/made-img.jpg 1x, ./images/made-img-2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/made-img-tab.png    1x,
+                  ./images/made-img-tab-2x.png 2x
+                "
+              />
+              <source
+                media="(max-width: 767px )"
+                srcset="
+                  ./images/made-img-mob.png    1x,
+                  ./images/made-img-mob-2x.png 2x
+                "
+              />
+              <img
+                src="./images/made-img-tab.png"
+                alt="liquid chocolate"
+                width="614"
+                class="made-image"
+              />
+            </picture>
             <div class="made-description">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
